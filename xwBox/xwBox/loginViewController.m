@@ -80,7 +80,7 @@
     self.iconView.image = [UIImage imageNamed:iconString];
     
     //记住密码按钮处理
-    self.remenberUserNameBtn.layer.cornerRadius = 5;
+    self.remenberUserNameBtn.layer.cornerRadius = 6;
     self.remenberUserNameBtn.layer.masksToBounds = YES;
     
     //设置按钮状态
