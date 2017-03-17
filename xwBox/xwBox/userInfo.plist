@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>icon</key>
-	<string>icon.png</string>
+	<string>heart.png</string>
 	<key>userName</key>
 	<string>lwj</string>
 	<key>password</key>
