@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		126AAE0C1E7B65A4009812A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 126AAE0B1E7B65A4009812A7 /* main.m */; };
 		126AAE0F1E7B65A4009812A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 126AAE0E1E7B65A4009812A7 /* AppDelegate.m */; };
-		126AAE121E7B65A4009812A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 126AAE111E7B65A4009812A7 /* ViewController.m */; };
-		126AAE151E7B65A4009812A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126AAE131E7B65A4009812A7 /* Main.storyboard */; };
 		126AAE181E7B65A4009812A7 /* xwBox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 126AAE161E7B65A4009812A7 /* xwBox.xcdatamodeld */; };
 		126AAE1A1E7B65A4009812A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126AAE191E7B65A4009812A7 /* Assets.xcassets */; };
 		126AAE1D1E7B65A4009812A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126AAE1B1E7B65A4009812A7 /* LaunchScreen.storyboard */; };
 		126AAE281E7B65A4009812A7 /* xwBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 126AAE271E7B65A4009812A7 /* xwBoxTests.m */; };
 		126AAE331E7B65A4009812A7 /* xwBoxUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 126AAE321E7B65A4009812A7 /* xwBoxUITests.m */; };
+		126AAE491E7B696E009812A7 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 126AAE471E7B696E009812A7 /* loginViewController.m */; };
+		126AAE4A1E7B696E009812A7 /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 126AAE481E7B696E009812A7 /* loginViewController.xib */; };
+		126AAE4C1E7B71F5009812A7 /* userInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 126AAE4B1E7B71F5009812A7 /* userInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +41,6 @@
 		126AAE0B1E7B65A4009812A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		126AAE0D1E7B65A4009812A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		126AAE0E1E7B65A4009812A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		126AAE101E7B65A4009812A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		126AAE111E7B65A4009812A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		126AAE141E7B65A4009812A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		126AAE171E7B65A4009812A7 /* xwBox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = xwBox.xcdatamodel; sourceTree = "<group>"; };
 		126AAE191E7B65A4009812A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		126AAE1C1E7B65A4009812A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +51,10 @@
 		126AAE2E1E7B65A4009812A7 /* xwBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xwBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		126AAE321E7B65A4009812A7 /* xwBoxUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xwBoxUITests.m; sourceTree = "<group>"; };
 		126AAE341E7B65A4009812A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		126AAE461E7B696E009812A7 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		126AAE471E7B696E009812A7 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
+		126AAE481E7B696E009812A7 /* loginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = loginViewController.xib; sourceTree = "<group>"; };
+		126AAE4B1E7B71F5009812A7 /* userInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +105,8 @@
 		126AAE091E7B65A4009812A7 /* xwBox */ = {
 			isa = PBXGroup;
 			children = (
-				126AAE0D1E7B65A4009812A7 /* AppDelegate.h */,
-				126AAE0E1E7B65A4009812A7 /* AppDelegate.m */,
-				126AAE101E7B65A4009812A7 /* ViewController.h */,
-				126AAE111E7B65A4009812A7 /* ViewController.m */,
-				126AAE131E7B65A4009812A7 /* Main.storyboard */,
-				126AAE191E7B65A4009812A7 /* Assets.xcassets */,
-				126AAE1B1E7B65A4009812A7 /* LaunchScreen.storyboard */,
-				126AAE1E1E7B65A4009812A7 /* Info.plist */,
-				126AAE161E7B65A4009812A7 /* xwBox.xcdatamodeld */,
+				126AAE401E7B6806009812A7 /* Class */,
+				126AAE441E7B6850009812A7 /* Other */,
 				126AAE0A1E7B65A4009812A7 /* Supporting Files */,
 			);
 			path = xwBox;
@@ -120,7 +115,12 @@
 		126AAE0A1E7B65A4009812A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				126AAE191E7B65A4009812A7 /* Assets.xcassets */,
+				126AAE1B1E7B65A4009812A7 /* LaunchScreen.storyboard */,
+				126AAE1E1E7B65A4009812A7 /* Info.plist */,
+				126AAE161E7B65A4009812A7 /* xwBox.xcdatamodeld */,
 				126AAE0B1E7B65A4009812A7 /* main.m */,
+				126AAE4B1E7B71F5009812A7 /* userInfo.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +141,57 @@
 				126AAE341E7B65A4009812A7 /* Info.plist */,
 			);
 			path = xwBoxUITests;
+			sourceTree = "<group>";
+		};
+		126AAE401E7B6806009812A7 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				126AAE451E7B68B7009812A7 /* Login */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		126AAE411E7B6812009812A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		126AAE421E7B6822009812A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		126AAE431E7B682D009812A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				126AAE461E7B696E009812A7 /* loginViewController.h */,
+				126AAE471E7B696E009812A7 /* loginViewController.m */,
+				126AAE481E7B696E009812A7 /* loginViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		126AAE441E7B6850009812A7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				126AAE0D1E7B65A4009812A7 /* AppDelegate.h */,
+				126AAE0E1E7B65A4009812A7 /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		126AAE451E7B68B7009812A7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				126AAE431E7B682D009812A7 /* Controller */,
+				126AAE421E7B6822009812A7 /* View */,
+				126AAE411E7B6812009812A7 /* Model */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +303,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				126AAE4A1E7B696E009812A7 /* loginViewController.xib in Resources */,
 				126AAE1D1E7B65A4009812A7 /* LaunchScreen.storyboard in Resources */,
 				126AAE1A1E7B65A4009812A7 /* Assets.xcassets in Resources */,
-				126AAE151E7B65A4009812A7 /* Main.storyboard in Resources */,
+				126AAE4C1E7B71F5009812A7 /* userInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				126AAE121E7B65A4009812A7 /* ViewController.m in Sources */,
+				126AAE491E7B696E009812A7 /* loginViewController.m in Sources */,
 				126AAE0F1E7B65A4009812A7 /* AppDelegate.m in Sources */,
 				126AAE181E7B65A4009812A7 /* xwBox.xcdatamodeld in Sources */,
 				126AAE0C1E7B65A4009812A7 /* main.m in Sources */,
@@ -318,14 +370,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		126AAE131E7B65A4009812A7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				126AAE141E7B65A4009812A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		126AAE1B1E7B65A4009812A7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -518,6 +562,7 @@
 				126AAE391E7B65A4009812A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		126AAE3A1E7B65A4009812A7 /* Build configuration list for PBXNativeTarget "xwBoxTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +571,7 @@
 				126AAE3C1E7B65A4009812A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		126AAE3D1E7B65A4009812A7 /* Build configuration list for PBXNativeTarget "xwBoxUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +580,7 @@
 				126AAE3F1E7B65A4009812A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

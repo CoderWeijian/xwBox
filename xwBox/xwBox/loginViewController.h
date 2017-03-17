@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  loginViewController.h
 //  xwBox
 //
 //  Created by 廖伟健 on 2017/3/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface loginViewController : UIViewController
 
 @end
-
