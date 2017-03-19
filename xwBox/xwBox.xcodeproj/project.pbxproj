@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123E56681E7EA845001A6C70 /* popView.m in Sources */ = {isa = PBXBuildFile; fileRef = 123E56671E7EA845001A6C70 /* popView.m */; };
 		126AAE0C1E7B65A4009812A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 126AAE0B1E7B65A4009812A7 /* main.m */; };
 		126AAE0F1E7B65A4009812A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 126AAE0E1E7B65A4009812A7 /* AppDelegate.m */; };
 		126AAE181E7B65A4009812A7 /* xwBox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 126AAE161E7B65A4009812A7 /* xwBox.xcdatamodeld */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		123E56661E7EA845001A6C70 /* popView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popView.h; sourceTree = "<group>"; };
+		123E56671E7EA845001A6C70 /* popView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popView.m; sourceTree = "<group>"; };
 		126AAE071E7B65A4009812A7 /* xwBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xwBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		126AAE0B1E7B65A4009812A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		126AAE0D1E7B65A4009812A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +88,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		123E56641E7EA81B001A6C70 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				129200E11E7C1F2400CAAB20 /* listViewController.h */,
+				129200E21E7C1F2400CAAB20 /* listViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		123E56651E7EA82B001A6C70 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				123E56661E7EA845001A6C70 /* popView.h */,
+				123E56671E7EA845001A6C70 /* popView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		126AADFE1E7B65A4009812A7 = {
 			isa = PBXGroup;
 			children = (
@@ -201,8 +222,8 @@
 		129200E01E7C1EE200CAAB20 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				129200E11E7C1F2400CAAB20 /* listViewController.h */,
-				129200E21E7C1F2400CAAB20 /* listViewController.m */,
+				123E56651E7EA82B001A6C70 /* view */,
+				123E56641E7EA81B001A6C70 /* controller */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -346,6 +367,7 @@
 			files = (
 				129200E31E7C1F2400CAAB20 /* listViewController.m in Sources */,
 				126AAE491E7B696E009812A7 /* loginViewController.m in Sources */,
+				123E56681E7EA845001A6C70 /* popView.m in Sources */,
 				126AAE0F1E7B65A4009812A7 /* AppDelegate.m in Sources */,
 				126AAE181E7B65A4009812A7 /* xwBox.xcdatamodeld in Sources */,
 				126AAE0C1E7B65A4009812A7 /* main.m in Sources */,
