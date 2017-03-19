@@ -47,6 +47,8 @@
     [self userInterfaceLayout];
     
     
+    self.passwordTF.text = @"121688";
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -78,6 +80,15 @@
     self.iconView.layer.cornerRadius = 50;
     self.iconView.layer.masksToBounds = YES;
     self.iconView.image = [UIImage imageNamed:iconString];
+    
+    //改变textField的高度
+    CGRect userNameRect = _userNameTF.frame;
+    userNameRect.size.height = 40;
+    _userNameTF.frame = userNameRect;
+    
+    CGRect passwordRect = _passwordTF.frame;
+    passwordRect.size.height = 40;
+    _passwordTF.frame = passwordRect;
     
     //记住密码按钮处理
     self.remenberUserNameBtn.layer.cornerRadius = 6;
