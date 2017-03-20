@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol popViewDelegate <NSObject>
+
+@optional
+-(void)buttonClickInPopView:(UIButton *)button;
+
+@end
+
 @interface popView : UIView
 
+@property (weak , nonatomic) id<popViewDelegate> delegate;
+
 -(instancetype)initWithSubButtonTitles:(NSArray *)titleArray frame:(CGRect)parentFrame currentContentOffset:(CGPoint)curContentOffset;
-//+(instancetype)popViewWithSubButtonTitles:(NSArray *)titleArray frame:(CGRect)parentFrame;
-
-
 
 @end

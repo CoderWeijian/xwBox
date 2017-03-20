@@ -39,11 +39,11 @@
         self.layer.cornerRadius = 8;
         self.layer.masksToBounds = YES;
         
-        for (NSString *subString in _titleArray) {
+        for (int i = 0;i < _titleArray.count;i++) {
             //添加popView里面的子按钮
             UIButton *subBtn = [[UIButton alloc] init];
             subBtn.backgroundColor = [UIColor colorWithRed:42/255.0 green:41/255.0 blue:42/255.0 alpha:1.0];
-            [subBtn setTitle:subString forState:UIControlStateNormal];
+            [subBtn setTitle:_titleArray[i] forState:UIControlStateNormal];
             subBtn.titleLabel.font = [UIFont systemFontOfSize:14.0];
             [subBtn addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchDown];
             
@@ -57,20 +57,25 @@
 
 -(void)layoutSubviews
 {
-    NSLog(@"%f",ContentOffset.y);
     //确定frame
     //确定popView的frame
     self.frame = CGRectMake(5, ContentOffset.y + 69, PFrame.size.width*0.3, self.subviews.count*30);
     //确定子控件的frame
     for (int i=0; i < self.subviews.count; i++) {
         self.subviews[i].frame = CGRectMake(0, i*30, self.frame.size.width, 30);
+        
+        self.subviews[i].tag = i;
     }
 
 }
 //点击popView里面的按钮
 -(void)clickButton:(UIButton *)button
 {
-    NSLog(@"sdbcuy");
+    
+    if ([self.delegate respondsToSelector:@selector(buttonClickInPopView:)]) {
+        
+        [self.delegate buttonClickInPopView:button];
+    }
 }
 
 - (void)drawRect:(CGRect)rect {

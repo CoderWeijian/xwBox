@@ -8,8 +8,9 @@
 
 #import "listViewController.h"
 #import "popView.h"
+#import "WJAdditemsControllerViewController.h"
 
-@interface listViewController ()
+@interface listViewController ()<popViewDelegate>
 {
     Boolean leftIconIsClick;
     CGPoint curContentOffset;
@@ -42,7 +43,7 @@
     self.navigationItem.hidesBackButton = YES;
 }
 
-#pragma mark - other
+#pragma mark - 导航栏方法
 -(void)addNavigatuonBarItems
 {
     //设置cell的高度
@@ -80,7 +81,7 @@
 {
     leftIconIsClick = !leftIconIsClick;
     
-    if (leftIconIsClick) {
+    if (leftIconIsClick) {//添加popview
         
         self.tableView.scrollEnabled = NO;
         
@@ -91,10 +92,11 @@
         self.coverBtn = coverBtn;
         
         popView *pop = [[popView alloc] initWithSubButtonTitles:@[@"个人主页",@"退出登录"] frame:[UIScreen mainScreen].bounds currentContentOffset:curContentOffset];
+        pop.delegate = self;
         [self.view addSubview:pop];
         self.popV = pop;
         
-    }else{
+    }else{//销毁popview
         
         self.tableView.scrollEnabled = YES;
         [self.popV removeFromSuperview];
@@ -103,6 +105,7 @@
     
 
 }
+//销毁popview
 -(void)dismissPopView
 {
     self.tableView.scrollEnabled = YES;
@@ -112,20 +115,20 @@
     
 }
 
-
 //导航栏右侧按钮点击事件
 -(void)addNewItem
 {
-    if (leftIconIsClick) {
+    if (leftIconIsClick) {//销毁popView
         
         self.tableView.scrollEnabled = YES;
         [self.popV removeFromSuperview];
         
         leftIconIsClick = !leftIconIsClick;
         
-    }else{
+    }else{//转跳到添加事项控制器
         
-        NSLog(@"转跳到添加事项控制器");
+        WJAdditemsControllerViewController *addVC = [[WJAdditemsControllerViewController alloc] init];
+        [self.navigationController pushViewController:addVC animated:YES];
     }
     
 }
@@ -159,9 +162,22 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     curContentOffset = scrollView.contentOffset;
-    
-    NSLog(@"%@",[NSValue valueWithCGPoint:scrollView.contentOffset]);
 }
 
 
+#pragma mark - popViewDelegate
+-(void)buttonClickInPopView:(UIButton *)button
+{
+    switch (button.tag) {
+        case 0://转跳到个人主页
+            
+            break;
+            
+        case 1://退出登录
+            [self.navigationController popToRootViewControllerAnimated:YES];
+            
+        default:
+            break;
+    }
+}
 @end

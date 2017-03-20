@@ -18,6 +18,8 @@
 		126AAE491E7B696E009812A7 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 126AAE471E7B696E009812A7 /* loginViewController.m */; };
 		126AAE4A1E7B696E009812A7 /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 126AAE481E7B696E009812A7 /* loginViewController.xib */; };
 		126AAE4C1E7B71F5009812A7 /* userInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 126AAE4B1E7B71F5009812A7 /* userInfo.plist */; };
+		128976271E7F728000B15BC1 /* WJAdditemsControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128976251E7F728000B15BC1 /* WJAdditemsControllerViewController.m */; };
+		128976281E7F728000B15BC1 /* WJAdditemsControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 128976261E7F728000B15BC1 /* WJAdditemsControllerViewController.xib */; };
 		129200E31E7C1F2400CAAB20 /* listViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 129200E21E7C1F2400CAAB20 /* listViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,9 @@
 		126AAE471E7B696E009812A7 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
 		126AAE481E7B696E009812A7 /* loginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = loginViewController.xib; sourceTree = "<group>"; };
 		126AAE4B1E7B71F5009812A7 /* userInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
+		128976241E7F728000B15BC1 /* WJAdditemsControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJAdditemsControllerViewController.h; sourceTree = "<group>"; };
+		128976251E7F728000B15BC1 /* WJAdditemsControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJAdditemsControllerViewController.m; sourceTree = "<group>"; };
+		128976261E7F728000B15BC1 /* WJAdditemsControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJAdditemsControllerViewController.xib; sourceTree = "<group>"; };
 		129200E11E7C1F2400CAAB20 /* listViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listViewController.h; sourceTree = "<group>"; };
 		129200E21E7C1F2400CAAB20 /* listViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +175,7 @@
 		126AAE401E7B6806009812A7 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				1289761F1E7F71F500B15BC1 /* addItems */,
 				129200E01E7C1EE200CAAB20 /* List */,
 				126AAE451E7B68B7009812A7 /* Login */,
 			);
@@ -219,9 +225,51 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		1289761F1E7F71F500B15BC1 /* addItems */ = {
+			isa = PBXGroup;
+			children = (
+				128976221E7F724600B15BC1 /* model */,
+				128976211E7F724000B15BC1 /* view */,
+				128976201E7F723800B15BC1 /* controller */,
+			);
+			name = addItems;
+			sourceTree = "<group>";
+		};
+		128976201E7F723800B15BC1 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				128976241E7F728000B15BC1 /* WJAdditemsControllerViewController.h */,
+				128976251E7F728000B15BC1 /* WJAdditemsControllerViewController.m */,
+				128976261E7F728000B15BC1 /* WJAdditemsControllerViewController.xib */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		128976211E7F724000B15BC1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		128976221E7F724600B15BC1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		128976291E7F731000B15BC1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		129200E01E7C1EE200CAAB20 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				128976291E7F731000B15BC1 /* model */,
 				123E56651E7EA82B001A6C70 /* view */,
 				123E56641E7EA81B001A6C70 /* controller */,
 			);
@@ -338,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				126AAE4A1E7B696E009812A7 /* loginViewController.xib in Resources */,
+				128976281E7F728000B15BC1 /* WJAdditemsControllerViewController.xib in Resources */,
 				126AAE1D1E7B65A4009812A7 /* LaunchScreen.storyboard in Resources */,
 				126AAE1A1E7B65A4009812A7 /* Assets.xcassets in Resources */,
 				126AAE4C1E7B71F5009812A7 /* userInfo.plist in Resources */,
@@ -370,6 +419,7 @@
 				123E56681E7EA845001A6C70 /* popView.m in Sources */,
 				126AAE0F1E7B65A4009812A7 /* AppDelegate.m in Sources */,
 				126AAE181E7B65A4009812A7 /* xwBox.xcdatamodeld in Sources */,
+				128976271E7F728000B15BC1 /* WJAdditemsControllerViewController.m in Sources */,
 				126AAE0C1E7B65A4009812A7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
